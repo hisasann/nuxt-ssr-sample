@@ -38,9 +38,14 @@ module.exports = {
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
-        name: 'custom',
+        name: 's',
         path: '/s/*',
         component: resolve(__dirname, 'pages/multi-slash.vue')
+      })
+      routes.push({
+        name: 'ab',
+        path: '/(c|d)-:a/(e|f)-:b/*',
+        component: resolve(__dirname, 'pages/parent-child.vue')
       })
     }
   }
