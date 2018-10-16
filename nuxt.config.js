@@ -34,6 +34,15 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '/s/*',
+        component: resolve(__dirname, 'pages/multi-slash.vue')
+      })
+    }
   }
 }
 
