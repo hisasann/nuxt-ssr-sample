@@ -10,15 +10,15 @@
 </template>
 
 <script>
-export default {
-  async asyncData({ route }) {
-    // http://localhost:3000/search/foo?a=b
-    console.log(route);
-    return {
-      path: route.path,
-      params: route.params,
-      query: route.query
-    };
+  // http://localhost:3000/search/foo?a=b
+  export default {
+    async asyncData({ route }) {
+      console.log(route);
+      return {
+        path: route.path,
+        params: route.params,
+        query: route.query
+      };
+    }
   }
-}
 </script>

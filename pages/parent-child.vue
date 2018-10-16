@@ -10,9 +10,9 @@
 </template>
 
 <script>
+  // http://localhost:3000/c-01/e-02/
   export default {
     async asyncData({ route }) {
-      // http://localhost:3000/c-01/e-02/
       console.log(route);
       return {
         path: route.path,
