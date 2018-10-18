@@ -43,7 +43,7 @@ module.exports = {
         component: resolve(__dirname, 'pages/multi-slash.vue')
       })
       routes.push({
-        name: 'regexp',
+        name: 'c',
         path: '/([a-d]+)/*',
         component: resolve(__dirname, 'pages/regexp.vue')
       })
@@ -51,6 +51,11 @@ module.exports = {
         name: 'ab',
         path: '/(c|d)-:a/(e|f)-:b/*',
         component: resolve(__dirname, 'pages/parent-child.vue')
+      })
+      routes.push({
+        name: 'd',
+        path: '/component/',
+        component: resolve(__dirname, 'pages/import-component.vue')
       })
     }
   }
