@@ -1,4 +1,4 @@
-# nuxt-sample
+# nuxt-ssr-sample
 
 > Nuxt.js project
 
